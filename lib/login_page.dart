@@ -18,19 +18,19 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             TextField(
-              decoration: InputDecoration(labelText: 'Benutzername'),
+              decoration: InputDecoration(
+                  labelText: 'Username/Email / Benutzername/E-Mail'),
             ),
             TextField(
-              decoration: InputDecoration(labelText: 'Passwort'),
+              decoration: InputDecoration(labelText: 'Password / Passwort'),
               obscureText: true,
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Anmelde-Logik hier hinzufügen
                 print('Anmeldung abgeschlossen');
                 Navigator.pop(
-                    context); // Zurück zur vorherigen Seite navigieren
+                    context); // Hier soll die Verlinkung zur Dashboard hergestellt werden!
               },
               child: Text('Anmelden'),
             ),
