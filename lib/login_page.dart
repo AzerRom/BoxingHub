@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test/media-sharing.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -29,10 +30,14 @@ class LoginPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 print('Anmeldung abgeschlossen');
-                Navigator.pop(
-                    context); // Hier soll die Verlinkung zur Dashboard hergestellt werden!
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MediaPage(),
+                  ),
+                );
               },
-              child: Text('Anmelden'),
+              child: const Text('Anmelden'),
             ),
           ],
         ),

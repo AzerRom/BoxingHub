@@ -27,11 +27,11 @@ class _RegisterPageState extends State<RegisterPage> {
         title: Text('Register / Registrieren'),
       ),
       body: SingleChildScrollView(
-        // This ensures that the content is scrollable when the keyboard is open
+        // Scrollbarer Inhalt, währnd die Tastatut öffnet
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisSize:
-              MainAxisSize.min, // Ensure the column takes minimum space
+              MainAxisSize.min, // minimaler Platz für die Spalte nutzen
           children: <Widget>[
             Text(
               'Register / Registrieren',
@@ -125,7 +125,7 @@ class _RegisterPageState extends State<RegisterPage> {
               },
               child: Text('Register / Registrieren'),
             ),
-            SizedBox(height: 20), // Extra space to ensure button isn't cut off
+            SizedBox(height: 20), // Platzhalter zwischen Widgets
           ],
         ),
       ),
