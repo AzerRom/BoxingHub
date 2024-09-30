@@ -1,2 +1,2 @@
-# BoxingHub
-Eine Anwendung für Boxer und Trainer, um zusammenzukommen! 
+# MaterialHub
+Eine Anwendung für Sportler und Trainer, um zusammenzukommen! 
